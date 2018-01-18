@@ -2,10 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry Point
- * Program checks if int n is zero, positive or negative
+ * main - main
+ * Description: Get a random number and print the number
+ * and if it is positive, negative or zero.
  * Return: 0
-*/
+ */
 int main(void)
 {
 	int n;
