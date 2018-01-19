@@ -22,12 +22,12 @@ int main(void)
 		b = a % 10; /* singles digit */
 		c = a / 10; /* doubles digit */
 
-		if b < c)
+		if (c < b)
 		{
-			putchar(b + '0');
 			putchar(c + '0');
+			putchar(b + '0');
 
-			if (c < 89)
+			if (a < 89)
 			{
 				putchar(',');
 				putchar(' ');
