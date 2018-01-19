@@ -25,7 +25,6 @@ if ( b < c)
 {
 putchar(b + '0');
 putchar(c + '0');
-
 if (a < 89)
 {
 putchar(',');
