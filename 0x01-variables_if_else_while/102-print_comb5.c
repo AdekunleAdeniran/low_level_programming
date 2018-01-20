@@ -2,8 +2,6 @@
 /**
  * main - Prints multiple combinations
  * Description: Write a program that prints all possible
- * combinations of two-digit numbers ranging form 0-99
- * you can only use putchar 8 maximum times
  * Return: 0
  */
 int main(void)
