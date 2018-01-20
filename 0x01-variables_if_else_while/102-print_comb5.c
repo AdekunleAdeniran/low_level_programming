@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: Write a program that prints all possible combinations
- * of two-digit numbers ranging form 0-99
+ * Description: Write a program that prints all possible
+ * combinations of two-digit numbers ranging form 0-99
  * Should print two digits, seperated by space and comma,
  * NUmber should be ascending, pattersn must never repeat.
  * 00 01 and 01 00 are considered the same.
@@ -12,26 +12,27 @@
 int main(void)
 {
 	int a, b, c, d;
+
 	for (a = '0'; a <= '9'; a++)
 	{
-		for(b = '0'; b <= '9'; b++)
+		for (b = '0'; b <= '9'; b++)
 		{
-			for (c ='0'; c <= '9'; c++)
+			for (c = '0'; c <= '9'; c++)
 			{
-				for(d = '0'; d <= '9'; d++)
+				for (d = '0'; d <= '9'; d++)
 				{
-					if (c >=a && b < d)
+					if (c >= a && b < d)
 					{
 						putchar(a);
 						putchar(b);
 						putchar(' ');
 						putchar(c);
 						putchar(d);
-						if (!(a=='9' && b =='8'))
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					if (!(a == '9' && b == '8'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 					}
 				}
 			}
