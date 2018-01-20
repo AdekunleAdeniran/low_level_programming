@@ -88,7 +88,7 @@ You can only use putchar five times maximum in your code
 You are not allowed to use any variable of type char
 All your code should be in the main function
 
-[101-print_comb4.c](./Write a program that prints all possible different combinations of three digits.
+[101-print_comb4.c](./101-print_comb4.c) - Write a program that prints all possible different combinations of three digits.
 
 Numbers must be separated by ,, followed by a space
 The three digits must be different
