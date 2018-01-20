@@ -1,11 +1,8 @@
 #include <stdio.h>
 /**
- * main - main block
+ * main - Prints multiple combinations
  * Description: Write a program that prints all possible
  * combinations of two-digit numbers ranging form 0-99
- * Should print two digits, seperated by space and comma,
- * NUmber should be ascending, pattersn must never repeat.
- * 00 01 and 01 00 are considered the same.
  * you can only use putchar 8 maximum times
  * Return: 0
  */
