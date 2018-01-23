@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_alphabet_x10(void): print list of alphabets 10 times
+ * print_alphabet_x10 - print list of alphabets 10 times
  *
  * Return: 0
  */
@@ -9,14 +9,17 @@
 void print_alphabet_x10(void)
 {
 	char c;
-	int d;
+	int d = 0;
 
-	for  (d = 0; d < 10; d++)
+	while (d < 10)
 	{
-		for (c = 'a'; c <= 'z'; c++)
+		c = 'a';
+		while (c <= 'z')
 		{
 			_putchar(c);
+			c++;
 		}
 		_putchar('\n');
+		d++;
 	}
 }
