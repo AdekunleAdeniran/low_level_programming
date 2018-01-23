@@ -1,4 +1,4 @@
-#include <holberton.h>
+#include "holberton.h"
 
 /**
  * print_alphabet - use only user defined variables to create output
@@ -9,12 +9,13 @@
 
 void print_alphabet(void)
 {
-	char a = 'a';
+	char c = 'a';
 
-	while (a <= 'z')
+	while (c <= 'z')
 	{
-		_putchar(a);
-		a++;
+		_putchar(c);
+		c++;
 	}
 	_putchar('\n');
+
 }
