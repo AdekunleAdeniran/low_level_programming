@@ -3,7 +3,7 @@
 /**
  * print_below_98 - check for numbers below 98
  * @a: int type
- * @c: int type
+ *
  *
  * Return: return all values including 98
  */
@@ -24,8 +24,8 @@ void print_below_98(int a)
 
 /**
  * print_above_98 - check for numbers above 98
- * @b: int type
  * @d: int type
+ *
  *
  * Return: return all values including 98
  */
