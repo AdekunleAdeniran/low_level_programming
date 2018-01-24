@@ -17,9 +17,8 @@ void print_below_98(int a)
 		if (c != 98)
 			printf("%d, ", c);
 		else
-			printf("%d ", c);
+			printf("%d\n", c);
 	}
-	printf("\n");
 }
 
 /**
@@ -39,9 +38,8 @@ void print_above_98(int d)
 		if (b != 98)
 			printf("%d, ", b);
 		else
-			printf("%d ", b);
+			printf("%d\n", b);
 	}
-	printf("\n");
 }
 
 /**
