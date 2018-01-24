@@ -11,17 +11,13 @@ void jack_bauer(void)
 {
 	int a, b, c, d;
 
-	a = '0';
-	while (a <= '2')
+	for (a = '0'; a <= '1'; a++)
 	{
-		b = '0';
-		while (b <= '3')
+		for (b = '0'; b <= '9'; b++)
 		{
-			c = '0';
-			while (c <= '5')
+			for (c = '0'; c <= '5'; c++)
 			{
-				d = '0';
-				while (d <= '9')
+				for (d = '0'; d <= '9'; d++)
 				{
 					_putchar(a);
 					_putchar(b);
@@ -29,12 +25,28 @@ void jack_bauer(void)
 					_putchar(c);
 					_putchar(d);
 					_putchar('\n');
-					d++;
 				}
-				c++;
 			}
-			b++;
 		}
-		a++;
+	}
+	int e, f, g, h;
+
+	for (e = '2'; e < '3'; e++)
+	{
+		for (f = '0'; f <= '3'; f++)
+		{
+			for (g = '0'; g <= '5'; g++)
+			{
+				for (h = '0'; h <= '9'; h++)
+				{
+					_putchar(e);
+					_putchar(f);
+					_putchar(':');
+					_putchar(g);
+					_putchar(h);
+					_putchar('\n');
+				}
+			}
+		}
 	}
 }
