@@ -9,11 +9,13 @@
 
 int main(void)
 {
-	double fib1  = 0;
-	double fib2  = 1;
+	double fib1  = 1;
+	double fib2  = 2;
 	double fib3;
-	int counter = 1;
+	int counter = 3;
 
+	printf("%.0f, ", fib1);
+	printf("%.0f, ", fib2);
 	while (counter <= 98)
 	{
 		fib3 =  fib2 + fib1;
