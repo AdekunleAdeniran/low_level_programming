@@ -4,7 +4,6 @@
  * swap_int - change the values of ints
  * @str: char type
  *
- * Return: 1
  */
 
 void _puts(char *str)
