@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * swap_int - change the values of ints
+ * _puts - change the values of ints
  * @str: char type
- *
+ * Description: take string and print to standard output
  */
 
 void _puts(char *str)
