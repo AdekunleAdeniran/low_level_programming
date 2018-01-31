@@ -23,7 +23,8 @@ int _strlen(char *s)
  * rev_string - reverse given string
  *
  * @s: char type
- * Return: a string in reverse
+ * Description: Reverses the string in memory
+ * Return: void
  */
 
 void rev_string(char *s)
