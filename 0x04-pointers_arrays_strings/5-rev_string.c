@@ -29,7 +29,7 @@ int _strlen(char *s)
 void rev_string(char *s)
 {
 
-	int b;
+	int b, c;
 	int length = _strlen(s);
 	char holder;
 
