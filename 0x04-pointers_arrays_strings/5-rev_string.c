@@ -1,43 +1,46 @@
 #include "holberton.h"
 /**
- * _strlen - return length of a string
- * @s: char type
+ * _strlen - returns the length of the string -1
+ * @s: the string to get the length
  *
- * Return:  length of string
+ * Return: lenght of the string
  */
 int _strlen(char *s)
 {
-	int a, count;
+	int counter = 0;
+	int a = 0;
 
-	for (a = 0; s[a] != '\0'; a++)
+	while (s[a] != '\0')
 	{
-		count = 0;
-		count += a;
+		++counter;
+		++a;
 	}
-	return (count);
+	--counter;
+	return (counter);
 }
 
 /**
- * rev_string - reverse given string
- * @s: char type
+ * rev_string - prints a string in reverse order
+ * @s: the string to count down from
  *
  * Description: Reverses the string in memory
  * Return: void
  */
-
 void rev_string(char *s)
 {
-	int a, length;
+
+	int b;
+	int length = _strlen(s);
 	char holder;
 
-	a = 0;
-	length = _strlen(s);
-	while (length >= a)
+	b = 0;
+	c = length;
+	while (c >= b)
 	{
-		holder = s[a];
-		s[a] = s[length];
-		s[length] = holder;
-		length--;
-		a++;
+		holder = s[b];
+		s[b] = s[c];
+		s[c] = holder;
+		c--;
+		b++;
 	}
 }
