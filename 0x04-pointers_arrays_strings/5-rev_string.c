@@ -1,12 +1,10 @@
 #include "holberton.h"
-
 /**
  * _strlen - return length of a string
- *
  * @s: char type
+ *
  * Return:  length of string
  */
-
 int _strlen(char *s)
 {
 	int a, count;
@@ -21,8 +19,8 @@ int _strlen(char *s)
 
 /**
  * rev_string - reverse given string
- *
  * @s: char type
+ *
  * Description: Reverses the string in memory
  * Return: void
  */
