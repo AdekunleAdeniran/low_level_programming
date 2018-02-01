@@ -9,23 +9,43 @@
 
 int main(void)
 {
-	double fib1  = 1;
-	double fib2  = 2;
-	double fib3;
-	int counter = 3;
+	long fib1, fib1a, fib1b, fib2, fib2a, fib2b, fib3, fib3a, fib3b;
+	long divi = 10000000000;
 
-	printf("%.0f, ", fib1);
-	printf("%.0f, ", fib2);
-	while (counter <= 98)
+	fib1 = 0;
+	fib2 = 1;
+	int counter = 1;
+
+	for (counter = 0; counter < 91; counter++)
 	{
 		fib3 =  fib2 + fib1;
-		counter++;
-	printf("%.0f", fib3);
-		if (counter <= 98)
-			printf(", ");
 		fib1 = fib2;
 		fib2 = fib3;
+		printf("%ld, ", fib3);
 	}
-	printf("\n");
+	fib1a = fib1 / divi;
+	fib1b = fib1 % divi;
+	fib2a = fib2 / divi;
+	fib2b = fib2 % divi;
+	for (; counter < 98; counter++)
+	{
+		fib3a = fib1a + fib2a;
+		fib3b = fib1b + fib2b;
+		if (fib3b > divi)
+		{
+			fib3b = fib3b % divi;
+			fib3a++;
+		}
+		if (counter != 97)
+		{
+			printf("%ld%ld, ", fib3a, fib3b);
+			fib1a = fib2a;
+			fib1b = fib2b;
+			fib2a = fib3a;
+			fib2b = fib3b;
+		}
+		else
+			printf("%ld%ld\n", fib3a, fib3b);
+	}
 	return (0);
 }
