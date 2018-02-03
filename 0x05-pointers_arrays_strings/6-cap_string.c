@@ -1,4 +1,10 @@
 #include "holberton.h"
+/**
+ * cap_string - capitalize words in a string
+ * @s: pointer to an array of words
+ *
+ * Return: Return capitalized words
+ */
 
 char *cap_string(char *s)
 {
