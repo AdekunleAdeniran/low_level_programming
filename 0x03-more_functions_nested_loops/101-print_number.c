@@ -34,7 +34,7 @@ void print_number(int n)
 		a = m;
 		if (m < 0)
 			_putchar(((m / power) * -1) + '0');
-		else if (m > 0)
+		else
 			_putchar((m / power) + '0');
 		remainder = a % power;
 		power /= 10;
