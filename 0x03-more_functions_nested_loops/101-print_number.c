@@ -8,11 +8,10 @@
 
 void print_number(int n)
 {
-	int a, remainder, count;
+	int a, remainder, length, count;
 	int m = n;
 	int pcounter = 0;
 	int power = 1;
-	int length;
 
 	if (n == 0)
 	{
@@ -21,8 +20,6 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
-		m = n;
 	}
 	for (length = 0; n != 0; length++)
 	{
@@ -35,6 +32,9 @@ void print_number(int n)
 	for (count = 0; count < length; count++)
 	{
 		a = m;
+		if (m < 0)
+			_putchar((m / power) * -1 + '0');
+		else if (m > 0)
 		_putchar((m / power) + '0');
 		remainder = a % power;
 		power /= 10;
