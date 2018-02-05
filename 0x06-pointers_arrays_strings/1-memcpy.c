@@ -2,10 +2,10 @@
 
 /**
  * *_memcpy - copy into memory location
- * @dest: pointer to destination array
- * @src: pointet to source array
- * @n: unsigned int
- * Return: dest
+ * @dest: char type pointer to destination array
+ * @src: char type pointer to source array
+ * @n: unsigned int type
+ * Return: pointer to destination
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
