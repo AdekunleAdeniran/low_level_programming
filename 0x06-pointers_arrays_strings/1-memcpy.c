@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _memcpy - copy into memory location
+ * *_memcpy - copy into memory location
  * @dest: pointer to destination array
  * @src: pointet to source array
  * @n: unsigned int
