@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _memset - set memory function
+ * *_memset - set memory function
  * @s: pointer to array
  * @b: char type
  * @n: unsigned int
@@ -17,5 +17,5 @@ char *_memset(char *s, char b, unsigned int n)
 		s[x] = b;
 		n--;
 	}
-	return (*s);
+	return (s);
 }
