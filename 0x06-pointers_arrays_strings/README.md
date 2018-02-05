@@ -6,6 +6,7 @@ What are multidimensional arrays and how to use them
 
 What are the most common C standard library functions to manipulate strings
 
+## Code Projects
 0. memset
 Write a function that fills memory with a constant byte.
 Prototype: char *_memset(char *s, char b, unsigned int n);
@@ -33,7 +34,6 @@ only of bytes from accept
 
 4. strpbrk
 Write a function that searches a string for any of a set of bytes.
-
 Prototype: char *_strpbrk(char *s, char *accept);
 The _strpbrk() function locates the first occurrence in the string s of any of
 the bytes in the string acceptReturns a pointer to the byte in s that
