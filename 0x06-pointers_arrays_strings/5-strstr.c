@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strstr - find a string in another string
+ * *_strstr - find a string in another string
  * @haystack: pointer to array to be searched
  * @needle: pointer to array to search for
  * Return: return pointer to location of string
