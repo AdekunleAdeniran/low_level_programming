@@ -9,19 +9,27 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
-	{
-		char *Begin = haystack;
-		char *pattern = needle;
+	const char *s, *t;
 
-		while (*haystack && *pattern && *haystack == *pattern)
+	if (!haystack || !needle)
+		return (0);
+
+	if (!*needle)
+		return ((char *)haystack);
+	for (; *haystack; haystack++)
+	{
+		if (*haystack == *needle)
 		{
-			haystack++;
-			pattern++;
+			t = haystack;
+			s = needle;
+			for (; *t; s++, t++)
+			{
+				if (*t != *s)
+					break;
+			}
+			if (!*s)
+				return ((char *)haystack);
 		}
-		if (!*pattern)
-			return (Begin);
-		haystack = Begin + 1;
 	}
-	return (NULL);
+	return (0);
 }
