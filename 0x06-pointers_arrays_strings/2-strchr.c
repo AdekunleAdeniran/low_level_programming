@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strchr - set memory function
+ * _strchr - checks for character in a string
  * @s: pointer to array
  * @c: char type
  *
