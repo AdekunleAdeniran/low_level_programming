@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include "stdio.h"
 
 /**
  * print_diagsums- sum diagonal values
