@@ -44,7 +44,6 @@ first one
 
 7. Winning is only half of it. Having fun is the other half
 Write a function that prints half of a string, followed by a new line.
-
 Prototype: void puts_half(char *str);
 The function should print the second half of the string
 If the number of characters is odd, the function should print the
@@ -53,7 +52,6 @@ If the number of characters is odd, the function should print the
 8. Arrays are not pointers
 Write a function that prints n elements of an array of integers,
 followed by a new line.
-
 Prototype: void print_array(int *a, int n);
 where n is the number of elements of the array to be printed
 Numbers must be separated by comma, followed by a space
@@ -70,7 +68,6 @@ Return value: the pointer to dest
 10. Great leaders are willing to sacrifice the numbers to save the people.
 Poor leaders sacrifice the people to save the numbers
 Write a function that convert a string to an integer.
-
 Prototype: int _atoi(char *s);
 The number in the string can be preceded by an infinite number of characters
 You need to take into account all the - and + signs before the number
@@ -87,7 +84,6 @@ We will use gcc version 5 or above to compile
 11. Don't hate the hacker, hate the code
 Create a program that generates random valid passwords for the
 program 101-crackme.
-
 You are allowed to use the standard library
 You don’t have to pass the betty-style tests
 (you still need to pass the betty-doc tests)
