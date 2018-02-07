@@ -8,7 +8,7 @@
 4. How to use strings and how to manipulate them
 5. Scope of variables
 
-##Exercises
+## Exercises
 
 0. 98 Battery st.
 Write a function that takes a pointer to an int as parameter and updates the
