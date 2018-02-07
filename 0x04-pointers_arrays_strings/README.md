@@ -8,6 +8,8 @@
 4. How to use strings and how to manipulate them
 5. Scope of variables
 
+##Exercises
+
 0. 98 Battery st.
 Write a function that takes a pointer to an int as parameter and updates the
 value it points to to 98.
@@ -91,3 +93,4 @@ You don’t have to pass the betty-style tests
 (you still need to pass the betty-doc tests)
 man srand, rand, time
 gdb and objdump can help
+
