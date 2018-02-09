@@ -28,7 +28,6 @@ Only print one argument per line, ending with a new line
 
 3. Neither irony or sarcasm is argument
 Write a program that multiplies two numbers.
-
 Your program should print the result of the multiplication, followed by a
 new line
 You can assume that the two numbers and result of the multiplication can
@@ -38,7 +37,6 @@ followed by a new line, and return 1
 
 4. To infinity and beyond
 Write a program that adds positive numbers.
-
 Print the result, followed by a new line
 If no number is passed to the program, print 0, followed by a new line
 If one of the number contains symbols that are not digits, print Error,
