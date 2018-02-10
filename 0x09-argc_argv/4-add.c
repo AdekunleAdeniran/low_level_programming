@@ -12,37 +12,29 @@
 #include <string.h>
 #include <ctype.h>
 
-int main(int argc, char *argv[])
-{
-        int count, sum;
-
-        sum = 0;
-       #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-
 int main(int argc, char *argv[]) 
 {
-        int count, sum;
+        int count, sum, alpha;
 
         sum = 0;
-
-            if (argc > 1)
+        if (argc < 1)
+        {
+            printf("0");
+        }
+        for (count = 1; count < argc; count++)
+        {
+            if (*argv[count] > 47 && *argv[count] < 58)
             {
-                for (count = 1; count <  argc; count++)
-                {
-                    sum += atoi(argv[count]);
-                }
-                printf("%d\n", sum);
+                sum += atoi(argv[count]);
             }
             else
             {
-                printf("0");
+                printf("Error\n");
+                return (1);
             }
-        
-        
-        
-  return (0);
+            
+        }
+        printf("%d\n", sum);
+
+    return (0);
 }
-           
