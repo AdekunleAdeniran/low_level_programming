@@ -11,21 +11,14 @@
 
 int main(int argc, char *argv[])
 {
-	int count, mul;
-
-	mul = 1;
-	if (argc >= 2)
-	{
-		for (count = 1; count < argc; count++)
-		{
-			mul *= atoi(argv[count]);
-		}
-		printf("%d\n", mul);
-	}
-	else
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	else
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+
+
 	return (0);
 }
