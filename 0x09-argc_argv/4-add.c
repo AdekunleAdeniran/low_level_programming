@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
+#include <ctype.h>
 /**
  * main - program to multiply two numbers
  * @argc: size of argv array and number of command line arguments
