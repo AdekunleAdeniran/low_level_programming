@@ -31,18 +31,22 @@ char *_strdup(char *str)
 	int size;
 	int x;
 
-	size = _strlen(str) + 1;
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+	size = _strlen(str) + 1;
 	ptr = malloc(size * sizeof(char));
+
 	x = 0;
 	while (x < size)
 	{
+	      	if (ptr == NULL)
+	        {
+		return (NULL);
+	}
 		ptr[x] = str[x];
 		x++;
 	}
-	ptr[x] +=  '\0';
 	return (ptr);
 }
