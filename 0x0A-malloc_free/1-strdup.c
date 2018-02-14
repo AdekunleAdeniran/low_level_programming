@@ -41,9 +41,9 @@ char *_strdup(char *str)
 	x = 0;
 	while (x < size)
 	{
-	      	if (ptr == NULL)
-	        {
-		return (NULL);
+		if (ptr == NULL)
+		{
+			return (NULL);
 	}
 		ptr[x] = str[x];
 		x++;
