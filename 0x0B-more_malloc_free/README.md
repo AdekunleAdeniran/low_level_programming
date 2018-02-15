@@ -25,7 +25,7 @@ If the function fails, it should return NULL
 If n is greater or equal to the length of s2 then use the entire string s2
 if NULL is pass, treat it as an empty string
 
-2. 2. _calloc
+2. _calloc
 Write a function that allocates memory for an array, using malloc.
 Prototype: void *_calloc(unsigned int nmemb, unsigned int size);
 The _calloc function allocates memory for an array of nmemb elements of size
