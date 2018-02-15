@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		ptr[count] = s1[count];
 	}
-	for (count1 = 0; count1 <= n && s2[count1] != '\0'; count1++)
+	for (count1 = 0; count1 <= n || s2[count1] != '\0'; count1++)
 	{
 		ptr[count] = s2[count1];
 		count++;
