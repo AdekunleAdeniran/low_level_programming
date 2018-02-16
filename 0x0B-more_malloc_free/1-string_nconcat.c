@@ -29,7 +29,7 @@ int _strlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int count, count1;
+	unsigned int count, count1, size;
 	char *ptr;
 
 	if (s1 == NULL)
@@ -37,11 +37,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	if (n >= _strlen(s2))
+	size = _strlen(s2);
+	if (n >= size)
 	{
 		ptr = malloc((sizeof(s1) + sizeof(s2)) * sizeof(char));
 	}
-	else if (n < _strlen(s2))
+	else if (n < size)
 	{
 		ptr = malloc((sizeof(s1) + n) * sizeof(char));
 	}
