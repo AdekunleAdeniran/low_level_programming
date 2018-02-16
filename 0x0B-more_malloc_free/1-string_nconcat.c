@@ -26,36 +26,35 @@ int _strlen(char *s)
  * @n: int type for size of byte
  * Return: pointer to new memory allocated
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int count, count1, size;
+	int count, count1;
+	int sign = n;
 	char *ptr;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-
-	size = _strlen(s2);
-	if (n >= size)
+	if (sign >= _strlen(s2))
 	{
-		ptr = malloc((sizeof(s1) + sizeof(s2) + 1) * sizeof(char));
+		sign = _strlen(s2);
+		ptr = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2) + 1));
 	}
-	else if (n < size)
+	else
 	{
-		ptr = malloc((sizeof(s1) + n + 1) * sizeof(char));
+		ptr = malloc(sizeof(char) * (_strlen(s1) + n + 1));
 	}
 
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	for (count = 0; s1[count] != '\0'; count++)
+	for (count = 0; count < _strlen(s1); count++)
 	{
 		ptr[count] = s1[count];
 	}
-	for (count1 = 0; count1 < n && s2[count1] != '\0'; count1++)
+	for (count1 = 0; count1 < sign; count1++)
 	{
 		ptr[count] = s2[count1];
 		count++;
