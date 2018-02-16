@@ -21,16 +21,17 @@ int *array_range(int min, int max)
 	}
 	for (count =  min; count <= max; count++)
 		;
-	ptr = malloc(sizeof(int) * count);
+	ptr = malloc(sizeof(int) * count + 1);
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	arr = min;
-	while (arr <= max)
+	arr = 0;
+	while (min <= max)
 	{
-		ptr[arr] = arr;
+		ptr[arr] = min;
 		arr++;
+		min++;
 	}
 	return (ptr);
 }
