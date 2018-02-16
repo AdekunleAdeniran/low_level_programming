@@ -21,11 +21,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 	count = 0;
-	while (count < size)
+	while (count < nmemb * size)
 	{
-		ptr[count] = nmemb;
+		ptr[count] = 0;
 		count++;
 	}
-	ptr[count] = 0;
 	return (ptr);
 }
