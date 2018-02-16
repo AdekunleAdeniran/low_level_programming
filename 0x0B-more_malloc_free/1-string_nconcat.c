@@ -21,9 +21,7 @@ int _strlen(char *s)
 
 /**
  * string_nconcat - function to concatnate strings with n bytes
- *
  * @s1: destination for concatnation
- *
  * @s2: source of string
  * @n: int type for size of byte
  * Return: pointer to new memory allocated
@@ -39,7 +37,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	ptr = malloc(((_strlen(s1) + _strlen(s2)) + 1) * sizeof(char));
+	if (n >= _strlen(s2))
+	{
+		ptr = malloc((sizeof(s1) + sizeof(s2)) * sizeof(char));
+	}
+	else if (n < _strlen(s2))
+	{
+		ptr = malloc((sizeof(s1) + n) * sizeof(char));
+	}
 
 	if (ptr == NULL)
 	{
@@ -49,7 +54,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		ptr[count] = s1[count];
 	}
-	for (count1 = 0; count1 <= n || s2[count1] != '\0'; count1++)
+	for (count1 = 0; count1 < n && s2[count1] != '\0'; count1++)
 	{
 		ptr[count] = s2[count1];
 		count++;
