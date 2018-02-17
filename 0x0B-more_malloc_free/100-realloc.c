@@ -4,6 +4,7 @@
 #include <string.h>
 /**
  * *_realloc - reallocate memory size function
+ * @ptr: pointer to address of old memory location
  * @old_size: unsigned int type of old memory size
  * @new_size: unsigned int type for new memory size
  * Return:  return pointer to array
