@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
 #include "dog.h"
-#include <stdlib.h>
 
 /**
  * print_dog - print struct dog
@@ -11,13 +9,15 @@
 
 void print_dog(struct dog *d)
 {
-	struct dog *my_dog;
-
-	my_dog = malloc(sizeof(struct dog));
 	if (d == NULL)
-		return (NULL);
-	my_dog->name = name;
-	my_dog->age = age;
-	my_dog->owner = owner;
-	return (d);
+		return;
+	if (d->name == NULL)
+		printf("(nil)\n");
+	else
+		printf("Name: %s\n", d->name);
+	printf("Age: %f\n", d->age);
+	if (d->owner == NULL)
+		printf("(nil)\n");
+	else
+		printf("Owner: %s\n", d->owner);
 }
