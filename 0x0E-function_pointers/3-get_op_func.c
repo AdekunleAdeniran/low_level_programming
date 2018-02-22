@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
+
 /**
  * get_op_func - function to select operator
  *
@@ -20,11 +21,9 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
-	while (ops[i].op != NULL)
+	while (ops[i].op != NULL && strcmp(ops[i].op, s) != 0)
 	{
-		if (ops[i].op[0] == *s)
-			return (ops[i].f);
 		i++;
 	}
-	return (NULL);
+	return (ops[i].f);
 }
