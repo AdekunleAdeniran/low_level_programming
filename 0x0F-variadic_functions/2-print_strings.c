@@ -1,4 +1,6 @@
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
 /**
  * print_strings - variadic function to print strings
  * @separator: const char type pointer to string between numbers
