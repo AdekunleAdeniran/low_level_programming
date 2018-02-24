@@ -1,9 +1,8 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 
-#include <stdio.h>
 #include <stdarg.h>
-
+#include <stdio.h>
 /**
  * struct pter - pointer to print all
  * @test: pointer to input for test
