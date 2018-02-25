@@ -17,6 +17,7 @@ void print_int(va_list arg)
  * @arg: va_list type
  * Return: always successful
  */
+
 void print_char(va_list arg)
 {
 	printf("%c", va_arg(arg, int));
@@ -30,6 +31,7 @@ void print_float(va_list arg)
 {
 	printf("%f", va_arg(arg, double));
 }
+
 /**
  * print_string - function to print string
  * @arg: va_list type
