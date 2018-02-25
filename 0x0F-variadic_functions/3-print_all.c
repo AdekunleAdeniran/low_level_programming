@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
 #include "stdio.h"
-#include <stdarg.h>
 
 /**
  * print_int - function to print ints
@@ -44,11 +43,9 @@ void print_string(va_list arg)
 	pr = va_arg(arg, char*);
 	if (pr == NULL)
 	{
-		printf("(nil)");
-		return;
+		pr = "(nil)";
 	}
-	else
-		printf("%s", pr);
+	printf("%s", pr);
 }
 
 /**
@@ -58,6 +55,10 @@ void print_string(va_list arg)
  */
 void print_all(const char * const format, ...)
 {
+	int i, j;
+	va_list arg;
+	char *seperator;
+
 	pt types[] = {
 		{"c", print_char},
 		{"i", print_int},
@@ -65,10 +66,6 @@ void print_all(const char * const format, ...)
 		{"s", print_string},
 		{NULL, NULL}
 	};
-
-	unsigned int i, j;
-	va_list arg;
-	char *seperator;
 
 	va_start(arg, format);
 
@@ -89,6 +86,6 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	va_end(arg);
 	printf("\n");
+	va_end(arg);
 }

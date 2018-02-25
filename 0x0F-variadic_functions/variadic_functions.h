@@ -2,7 +2,8 @@
 #define VARIADIC_FUNCTIONS_H
 
 #include <stdarg.h>
-#include <stdio.h>
+
+int _putchar(char c);
 /**
  * struct pter - pointer to print all
  * @test: pointer to input for test
