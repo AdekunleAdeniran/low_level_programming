@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * *add_nodeint - function to add node from top
+ * *add_nodeint_end - function to add node from top
  * @head: listint_t type of node struct pointer to head
  * @n: const int type
  * Return: Always successful
