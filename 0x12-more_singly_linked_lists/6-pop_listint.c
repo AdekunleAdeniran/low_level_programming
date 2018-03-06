@@ -7,14 +7,15 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *top = NULL;
-	int value = -1;
+	int value = 0;
 
 	if (*head == NULL)
 	{
-		return (-1);
+		return (0);
 	}
-	top = (*head)->next;
-	value = (*head)->n;
-	*head = top;
+	top = *head;
+	value = top->n;
+	*head = top->next;
+	free(top);
 	return (value);
 }
