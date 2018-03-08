@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  * binary_to_uint - function to convert binary to unsigned int
  * @b: pointer to char string input
