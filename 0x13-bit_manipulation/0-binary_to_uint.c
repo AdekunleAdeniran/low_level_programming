@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * binary_to_unit - function to convert binary to unsigned int
+ * binary_to_uint - function to convert binary to unsigned int
  * @b: pointer to char string input
  * Return: always successful
  */
