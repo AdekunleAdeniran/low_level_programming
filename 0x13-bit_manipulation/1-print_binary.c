@@ -7,8 +7,12 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int check = 1u << 10;
+	unsigned int check = 1;
 
+	while (check << 1 <= n)
+	{
+		check <<= ;
+	}
 	if (n ==  0)
 	{
 		_putchar('0');
