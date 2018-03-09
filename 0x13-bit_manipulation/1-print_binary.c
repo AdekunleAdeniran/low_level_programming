@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 
 	while (check << 1 <= n)
 	{
-		check <<= ;
+		check <<= 1;
 	}
 	if (n ==  0)
 	{
