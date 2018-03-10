@@ -7,23 +7,28 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int check = 1;
+	unsigned long int check;
+	unsigned int size = sizeof(n) * 8;
+	unsigned int count;
+	unsigned int flag = 1;
 
-	while (check << 1 <= n)
+	count = 0;
+	while (count < size)
 	{
-		check <<= 1;
-	}
-	if (n ==  0)
-	{
-		_putchar('0');
-		return;
-	}
-	while (check > 0)
-	{
-		if ((check & n) == 0)
-			_putchar('0');
-		else
-			_putchar('1');
+		check = (n << 1);
 		check >>= 1;
+		if (n != check)
+		{
+			flag = 0;
+			write(1, "1", 1);
+		}
+		else if (!flag)
+		{
+			write(1, "0", 1);
+		}
+		n <<=  1;
+		count++;
 	}
+	if (flag == 1)
+		write(1, "0", 1);
 }
