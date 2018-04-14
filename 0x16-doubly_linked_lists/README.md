@@ -1,6 +1,6 @@
 # 0x16. C - Doubly linked lists
 
-## What you should learn from this project
+** What you should learn from this project **
 At the end of this project you are expected to be able to explain to anyone, without the help of Google:
 
 * What is a doubly linked list
@@ -9,7 +9,7 @@ At the end of this project you are expected to be able to explain to anyone, wit
 
 ## Exercises
 
-0. Print list
+** 0. Print list **
 * Write a function that prints all the elements of a dlistint_t list.
 * Prototype: size_t print_dlistint(const dlistint_t *h);
 * Return: the number of nodes
