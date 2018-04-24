@@ -14,7 +14,7 @@ without the help of Google:
 * What are the gcc flags -Wall -Werror -pedantic -Wextra
 * What are header files and how to to use them with #include
 
-[0. _putchar](./0. _putchar)
+[0._putchar](./0_putchar)
 ```
 Write a program that prints Holberton, followed by a new line.
 ``
