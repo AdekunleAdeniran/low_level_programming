@@ -1,6 +1,6 @@
-# 0x00. C - Hello, World
+## 0x00. C - Hello, World
 
-## Exercises
+### Exercises
 
 [0-preprocessor](./0-preprocessor)
 ```
