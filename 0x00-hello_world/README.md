@@ -1,4 +1,5 @@
 ## 0x00. C - Hello, World
+Introduction to programming and first set of assignments at Holberton School
 
 ### Exercises
 
