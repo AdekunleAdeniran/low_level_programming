@@ -20,5 +20,9 @@ void(*get_func(char **token, unsigned int line))(stack_t **, unsigned int)
 	};
 	unsigned int check = 0;
 
-
+	while (ops[check].op != NULL && strcmp(ops[check].op, token) != 0)
+	{
+		
+		check++;
+	}
 }

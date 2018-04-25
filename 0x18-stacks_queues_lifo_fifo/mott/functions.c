@@ -22,6 +22,7 @@ void op_push(stack_t **stack, unsigned int line_number)
 	{
 		node->next = NULL;
 		*stack = node;
+		return (*stack);
 	}
 	temp = *stack;
 	node->next = temp;
