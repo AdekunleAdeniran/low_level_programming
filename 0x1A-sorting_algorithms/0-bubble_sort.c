@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "sort.h"
 
 /**
@@ -12,8 +10,10 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t check = size;
-	size_t i, temp;
+	size_t i, temp = 0;
 
+	if (array == NULL || size == 0)
+		return;
 	while (check > 0)
 	{
 		for (i = 1; array && i < size; i++)
