@@ -1,5 +1,4 @@
 #include "sort.h"
-
 /**
  * selection_sort - sorts a list using selection sort
  *
@@ -9,6 +8,9 @@
 void selection_sort(int *array, size_t size)
 {
 	size_t i = 0, j = 0, m = 0, t = 0;
+
+	if (array == NULL || size == 0)
+		return;
 
 	if (size > 2)
 	{
