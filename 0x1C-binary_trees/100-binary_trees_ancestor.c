@@ -10,13 +10,13 @@ binary_tree_t *binary_trees_ancestor(
 {
 	binary_tree_t *left, *right;
 
-	if (first == NULL || second == NULL)
+	if (!first || !second)
 		return (NULL);
 
 	if (first->parent == second->parent)
 		return (first->parent);
 	if (second->parent == first)
-		return (second->parent);
+		return ((binary_tree_t *)first);
 	left = binary_trees_ancestor(first->parent, second);
 	right = binary_trees_ancestor(second->parent, first);
 
@@ -26,4 +26,5 @@ binary_tree_t *binary_trees_ancestor(
 		return (NULL);
 	else
 		return (left == NULL ? right : left);
+	return (NULL);
 }
