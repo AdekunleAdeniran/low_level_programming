@@ -28,7 +28,7 @@ binary_tree_t *binary_trees_ancestor(
 
 	if (!first || !second)
 		return (NULL);
-	if (first == second->parent)
+	if (first == second)
 		return ((binary_tree_t *)first);
 	if (first->parent == second->parent)
 		return (first->parent);
@@ -41,12 +41,4 @@ binary_tree_t *binary_trees_ancestor(
 	else if (binary_tree_depth(second) > binary_tree_depth(first))
 		return (right);
 	return (binary_trees_ancestor(first->parent, second->parent));
-/*
-	if (left != NULL && right != NULL)
-		return (first->parent);
-	else if (left == NULL && right == NULL)
-		return (NULL);
-	else
-		return (left == NULL ? right : left);
-*/
 }
