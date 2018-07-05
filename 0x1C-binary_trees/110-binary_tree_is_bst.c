@@ -13,9 +13,9 @@ int is_bst(const binary_tree_t *tree,
 {
 	if (!tree)
 		return (1);
-	if (l && l->n > tree->n)
+	if (l && l->n >= tree->n)
 		return (0);
-	if (r && r->n < tree->n)
+	if (r && r->n <= tree->n)
 		return (0);
 	return (is_bst(tree->left, l, tree) &&
 		is_bst(tree->right, tree, r));
