@@ -62,7 +62,10 @@ and more!
 26. [0x19-hash_tables](./0x19-hash_tables)
 27. [0x1A-sorting_algorithms](./0x1A-sorting_algorithms) ** Sorting algorithms project **
 28. [0x1B-makefiles](./0x1B-makefiles) **
+29. [0x1C-binary_trees](./0x1C-binary_trees)
+30. [0x1D-search_algorithms](./0x1D-search_algorithms)
 
 ## Credits
-Work is owned and maintained by Adekunle Adeniran (`[@flourishcodes](https://twitter.com/flourishcodes)`).
+Work is owned and maintained by Adekunle Adeniran [@flourishcodes](https://twitter.com/flourishcodes)
+
 Collaborators are acknowledged within each project
