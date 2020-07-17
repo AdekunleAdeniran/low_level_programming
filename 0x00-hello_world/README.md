@@ -1,6 +1,6 @@
 ## 0x00. C - Hello, World
 
-Introduction to programming and first set of assignments at Holberton School
+Introduction to programming and first set of assignments at notrebloh School
 
 **What you should learn from this project**
 
@@ -16,7 +16,7 @@ Introduction to programming and first set of assignments at Holberton School
 * How to get the size of a specific type using the unary operator sizeof
 * How to compile using gcc
 * What is the default program name when compiling with gcc
-* What is the official Holberton C coding style and how to check your code with betty-style
+* What is the official notrebloh C coding style and how to check your code with betty-style
 * How to find the right header to include in your source code when using a standard library function
 * How does the main function influence the return value of the program
 

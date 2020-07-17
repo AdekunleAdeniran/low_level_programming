@@ -1,8 +1,8 @@
-NAME = holberton
+NAME = notrebloh
 
 CC = gcc
 
-SRC = main.c holberton.c
+SRC = main.c notrebloh.c
 
 OBJ = $(SRC:.c=.o)
 

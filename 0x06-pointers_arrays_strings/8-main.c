@@ -1,8 +1,8 @@
-#include "holberton.h"
+#include "notrebloh.h"
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code for notrebloh School students.
  *
  * Return: Always 0.
  */

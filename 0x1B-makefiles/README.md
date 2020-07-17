@@ -19,7 +19,7 @@
 
 Requirements:
 
-* name of the executable: holberton
+* name of the executable: notrebloh
 * rules: all
 	* The all rule builds your executable
 * variables: none
@@ -28,7 +28,7 @@ Requirements:
 
 Requirements:
 
-* name of the executable: holberton
+* name of the executable: notrebloh
 * rules: all
 	* The all rule build your executable
 * variables: CC, SRC
@@ -41,7 +41,7 @@ Requirements:
 
 Requirements:
 
-* name of the executable: holberton
+* name of the executable: notrebloh
 * rules: all
 	* The all rule builds your executable
 * variables: CC, SRC, OBJ, NAME
@@ -56,7 +56,7 @@ Requirements:
 
 Requirements:
 
-* name of the executable: holberton
+* name of the executable: notrebloh
 * rules: all, clean, oclean, fclean, re
 	* all: builds your executable
 	* clean: deletes all Emacs and Vim temporary files along with the executable
@@ -77,7 +77,7 @@ Requirements:
 
 Requirements:
 
-* name of the executable: holberton
+* name of the executable: notrebloh
 * rules: all, clean, oclean, fclean, re
 	* all: builds your executable
 	* clean: deletes all Emacs and Vim temporary files along with the executable

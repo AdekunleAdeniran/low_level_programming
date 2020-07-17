@@ -11,7 +11,7 @@ At the end of this project you are expected to be able to explain to anyone, wit
 
 **0. A library is not a luxury but one of the necessities of life**
 
-    Create the dynamic library libholberton.so containing all the functions listed below:
+    Create the dynamic library libnotrebloh.so containing all the functions listed below:
 
 **1. Without libraries what have we? We have no past and no future**
 

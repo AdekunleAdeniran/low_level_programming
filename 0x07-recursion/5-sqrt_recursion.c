@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "notrebloh.h"
 
 /**
  * if_natural_square - check if a has natural square

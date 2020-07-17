@@ -1,7 +1,7 @@
 # 0x08. C - Static libraries
 
 0. A library is not a luxury but one of the necessities of life mandatory
-Create the static library libholberton.a containing
+Create the static library libnotrebloh.a containing
 
 1. Without libraries what have we? We have no past and no future mandatory
 Create a script called create_static_lib.sh that creates a static library

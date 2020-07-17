@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	print_holberton();
+	print_notrebloh();
 	return (EXIT_SUCCESS);
 }

@@ -1,13 +1,13 @@
 #include "m.h"
 
 /**
- * print_holberton - print the logo of Holberton
+ * print_notrebloh - print the logo of notrebloh
  *
  * Return: Nothing
  *
- * Learn more: https://www.holbertonschool.com
+ * Learn more: https://www.notreblohschool.com
  */
-void print_holberton(void)
+void print_notrebloh(void)
 {
 	printf("j#0000000000000000000000000000000000000\n");
 	printf("j#000000000000000000@Q**g00000000000000\n");

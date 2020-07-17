@@ -41,7 +41,7 @@
   array of the hash table
 * You will have to use this hash function for all the next tasks
 
-**3. >>> ht['betty'] = 'holberton'**
+**3. >>> ht['betty'] = 'notrebloh'**
 
      Write a function that adds an element to the hash table.
 

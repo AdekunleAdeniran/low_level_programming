@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "notrebloh.h"
 
 /**
  * check_prime - check for number is prime
